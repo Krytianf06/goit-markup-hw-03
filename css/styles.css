@@ -59,7 +59,10 @@ img {
 .navigation{
   display: flex;
 }
-
+.header{
+  background:var(--fourth-color-text);
+  border-bottom: 1px solid #ECECEC;
+}
 .navigation-list{
   display: flex;
   align-items:center;
@@ -70,7 +73,6 @@ img {
 .header-whole{
   align-items:center;
   margin: 0 auto;
-  border-bottom: 1px solid #ECECEC;
 }
 .header-mail{
   margin-left: auto;
@@ -115,11 +117,11 @@ img {
 
 /*--end header--*/
 /*--hero--*/
-.hero-title{
-  width: 1200px;
-  height: 600px;
+.hero{
   background: #2F303A;
-  
+}
+.hero-title{
+  height: 600px;
 }
 .hero-title-item{
   box-sizing: content-box;
@@ -160,6 +162,9 @@ img {
   color:var(--fourth-color-text);
 }
 /* <!--first center--> */
+.first-center{
+  padding-top: 94px;
+}
 .hero-text-title{
   font-weight: var(--third-font-weight);
   font-size: 14px;
@@ -176,13 +181,9 @@ img {
   letter-spacing: 0.03em;
   color:var(--third-color-text);
 }
-.hero-text{
-  margin-top: 94px;
-}
 .hero-text li:not(:last-child){
   margin-right: 30px;
 }
-
 /*-- end hero--*/
 
 /*-- what we do--*/
@@ -196,9 +197,8 @@ img {
 
 .images{
   display: flex;
-  margin-top: 50px;
-  margin-bottom: 94px;
-  
+  padding-top: 50px;
+  padding-bottom: 94px;  
 }
 .images li:not(:last-child){
   margin-right: 30px;
@@ -233,9 +233,7 @@ letter-spacing: 0.03em;
 }
 .section-color{
   background: #F5F4FA;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 94px 0 0;
+  padding: 94px 0 94px;
 }
 .team-name-list{
   display: flex;
@@ -259,7 +257,6 @@ letter-spacing: 0.03em;
 /*-- end Our team--*/
 /*-- footer--*/
 .footer-logo{
-  
   margin-bottom: 20px;
   font-family:var(--second-font);
   font-weight: var(--third-font-weight);
@@ -272,6 +269,8 @@ letter-spacing: 0.03em;
 .footer a{
   display: block;
   font-style: normal;
+}
+.footer-color{
   background: #2F303A;
 }
 .footer a:hover{
@@ -295,7 +294,7 @@ letter-spacing: 0.03em;
 .footer-adress{
   padding-top: 60px;
   padding-bottom: 60px;
-  margin-top: 94px;
+  /* margin-top: 94px; */
 }
 .footer-adress-list li:not(:first-child){
   margin-top: 9px;
@@ -358,7 +357,7 @@ letter-spacing: 0.03em;
 .activities{
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  padding-bottom: 94px;
 }
 .pictures-list{
   display: flex;
